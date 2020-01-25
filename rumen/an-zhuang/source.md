@@ -136,7 +136,7 @@ cd ${source_folder}/build
 - 安装过程中, 由于tars-web依赖nodejs, 所以会自动下载nodejs, npm, pm2以及相关的依赖, 并设置好环境变量, 保证nodejs生效.
 - nodejs的版本目前默认下载的v12.13.0
 - 如果你本机以及安装了nodejs, 最好卸载掉
-
+- 如果使用腾讯云服务器请修改 linux-install.sh 中 MIRROR变量为 http://mirrors.tencentyun.com 否则安装node与pm2的时候出现失败的情况
 **注意:需要完成TarsFramework的编译和安装**
 
 下载tarsweb并copy到/usr/local/tars/cpp/deploy目录下(注意目录名是web, 不要搞错!):
